@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QYc-3a-ufJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,29 +65,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Palabra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
-                                <rect key="frame" x="16" y="37" width="343" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
+                                <rect key="frame" x="16" y="37" width="343" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-jC-IkY">
-                                <rect key="frame" x="16" y="82" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-jC-IkY">
+                                <rect key="frame" x="16" y="92" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Definición " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
-                                <rect key="frame" x="16" y="129" width="343" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
+                                <rect key="frame" x="16" y="129" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="mwE-2V-2O9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="Bkp-Zo-sK7"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="Es5-p9-53S"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="top" secondItem="Yyn-BW-fDc" secondAttribute="bottom" constant="17" id="Mto-4A-jMV"/>
+                            <constraint firstItem="GPg-vI-m89" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="16" id="TWh-jp-pyM"/>
+                            <constraint firstItem="GPg-vI-m89" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="crt-Jh-cQw"/>
+                            <constraint firstItem="DoV-jC-IkY" firstAttribute="top" secondItem="IcX-gN-iAS" secondAttribute="bottom" constant="10" id="kok-s5-pQw"/>
+                            <constraint firstItem="GPg-vI-m89" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="nXb-Vo-r2t"/>
+                            <constraint firstItem="DoV-jC-IkY" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="sqS-Zt-FkT"/>
+                            <constraint firstItem="DoV-jC-IkY" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="vuu-g2-wJL"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="centerX" secondItem="HGm-j2-c4f" secondAttribute="centerX" id="wh7-8W-noL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4X-c9-xug" userLabel="First Responder" sceneMemberID="firstResponder"/>
