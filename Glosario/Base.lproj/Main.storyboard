@@ -67,22 +67,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
-                                <rect key="frame" x="16" y="72" width="343" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
+                                <rect key="frame" x="16" y="72" width="343" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="HfZ-xd-Wlx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-jC-IkY">
-                                <rect key="frame" x="16" y="127" width="343" height="21"/>
+                                <rect key="frame" x="16" y="183" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
-                                <rect key="frame" x="16" y="164" width="343" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición " lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
+                                <rect key="frame" x="16" y="234" width="343" height="382"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="mwE-2V-2O9"/>
+                                    <constraint firstAttribute="height" constant="382" id="mwE-2V-2O9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -94,9 +97,9 @@
                             <constraint firstItem="IcX-gN-iAS" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="Bkp-Zo-sK7"/>
                             <constraint firstItem="IcX-gN-iAS" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="Es5-p9-53S"/>
                             <constraint firstItem="IcX-gN-iAS" firstAttribute="top" secondItem="Yyn-BW-fDc" secondAttribute="bottom" constant="8" id="Mto-4A-jMV"/>
-                            <constraint firstItem="GPg-vI-m89" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="16" id="TWh-jp-pyM"/>
+                            <constraint firstItem="GPg-vI-m89" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="30" id="TWh-jp-pyM"/>
                             <constraint firstItem="GPg-vI-m89" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="crt-Jh-cQw"/>
-                            <constraint firstItem="DoV-jC-IkY" firstAttribute="top" secondItem="IcX-gN-iAS" secondAttribute="bottom" constant="10" id="kok-s5-pQw"/>
+                            <constraint firstItem="DoV-jC-IkY" firstAttribute="top" secondItem="IcX-gN-iAS" secondAttribute="bottom" constant="8" id="kok-s5-pQw"/>
                             <constraint firstItem="GPg-vI-m89" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="nXb-Vo-r2t"/>
                             <constraint firstItem="DoV-jC-IkY" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="sqS-Zt-FkT"/>
                             <constraint firstItem="DoV-jC-IkY" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="vuu-g2-wJL"/>

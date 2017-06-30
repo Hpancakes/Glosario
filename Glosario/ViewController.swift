@@ -108,11 +108,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         word11.definition = "Un espécimen similar al objeto de ensayo que contiene discontinuidades naturales o artificiales que están bien definidas y son similares en tamaño o extensión al máximo aceptable en el producto. Ver norma de referencia y estándar."
         
         let word12 = DefinitionsPND()
-        word12.word = "Acceptance standard"
+        word12.word = "Accommodation:"
         word12.category = "General"
-        word12.definition = "Un espécimen similar al objeto de ensayo que contiene discontinuidades naturales o artificiales que están bien definidas y son similares en tamaño o extensión al máximo aceptable en el producto. Ver norma de referencia y estándar."
+        word12.definition = "Del ojo, ajuste de la potencia de enfoque de la lente cambiando el grosor y la curvatura de la lente por la acción de músculos minúsculos atados a la lente."
         
-        return [word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11,   ]
+        let word13 = DefinitionsPND()
+        word13.word = "Accumulation test technique"
+        word13.category = "General"
+        word13.definition = "Detectar la cantidad total de fuga encerrando el componente bajo prueba dentro de una capucha, bolsa, caja, cubierta o contenedor. Para pruebas de presión, cualquier fuga de gas del componente se acumula en el espacio (volumen) entre el componente y el recinto. Para la prueba de vacío, cualquier fuga de gas en el componente se acumula en el detector de fugas muestreando el componente evacuado. La acumulación de gas trazador en un período de tiempo medido proporciona una medida de la tasa de fugas."
+        
+        let word14 = DefinitionsPND()
+        word14.word = "accuracy"
+        word14.category = "General"
+        word14.definition = "El grado de conformidad de una medida con un valor estándar o verdadero."
+        
+        let word15 = DefinitionsPND()
+        word15.word = "Acoustic emission"
+        word15.category = "Emision Acustica"
+        word15.definition = "Las ondas elásticas transitorias resultantes de micro desplazamientos internos locales en un material. El término también describe la disciplina técnica y la técnica de medición relacionada con este fenómeno."
+        
+        let word16 = DefinitionsPND()
+        word16.word = "acoustic emission activity"
+        word16.category = "Emision Acustica"
+        word16.definition = "El número de ráfagas (o eventos, si se cumplen las condiciones apropiadas) detectados durante una prueba de emisión acústica."
+        
+        
+        
+        return [word1, word2, word3, word4, word5, word6, word7, word8, word9, word10, word11, word12, word13, word14, word15, word16,  ]
     }
 
 
