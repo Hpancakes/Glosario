@@ -25,6 +25,7 @@ class DefinitionViewController: UIViewController {
         categoriaLabel.text = defPND.category
         definitionLabel.text = defPND.definition
         
+        definitionLabel.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,5 +33,11 @@ class DefinitionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        definitionLabel.sizeToFit()
+    }
+    */
 
 }
