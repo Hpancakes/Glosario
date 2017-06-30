@@ -47,6 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="X9G-M7-gy6"/>
                     <connections>
+                        <outlet property="searchBar" destination="lvH-rR-f5R" id="gV1-wP-Jsp"/>
                         <outlet property="wordTableView" destination="rKc-uP-VJz" id="z21-p7-ViN"/>
                         <segue destination="QYc-3a-ufJ" kind="show" identifier="Segue" id="WjD-Ly-iZO"/>
                     </connections>

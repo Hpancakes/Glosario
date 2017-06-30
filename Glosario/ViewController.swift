@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var wordTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var def : [DefinitionsPND] = []
+    
+    // var para la searchBar
+    var searchActive : Bool = false
+    var filtered:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +25,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         wordTableView.dataSource = self
         wordTableView.delegate = self
+        searchBar.delegate = self
         def = makeDefinition()
     }
     
+    
+    
+    // Apartir de aqui es el codigo de la tableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return def.count
