@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1o-cz-Kd6">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,15 +19,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rKc-uP-VJz">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="628"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-rR-f5R">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
                                 <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -64,40 +64,78 @@
                         <viewControllerLayoutGuide type="bottom" id="p87-vT-8oE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HGm-j2-c4f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
-                                <rect key="frame" x="16" y="72" width="343" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcX-gN-iAS">
+                                <rect key="frame" x="0.0" y="84" width="414" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
+                                <rect key="frame" x="20" y="221" width="374" height="20.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-jC-IkY">
-                                <rect key="frame" x="16" y="122" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Termino:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxd-aN-GBl">
+                                <rect key="frame" x="0.0" y="64" width="414" height="20.666666666666671"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRz-GV-ETc">
+                                <rect key="frame" x="0.0" y="163" width="414" height="37"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="eXl-0C-mcc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSz-V2-HPH">
+                                <rect key="frame" x="20" y="134" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tnL-0Y-7BE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definición " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-vI-m89">
-                                <rect key="frame" x="16" y="173" width="343" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-jC-IkY">
+                                <rect key="frame" x="108" y="134" width="286" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GPg-vI-m89" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="30" id="8Kk-yc-TTl"/>
-                            <constraint firstItem="IcX-gN-iAS" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="Bkp-Zo-sK7"/>
-                            <constraint firstItem="IcX-gN-iAS" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="Es5-p9-53S"/>
-                            <constraint firstItem="IcX-gN-iAS" firstAttribute="top" secondItem="Yyn-BW-fDc" secondAttribute="bottom" constant="8" id="Mto-4A-jMV"/>
+                            <constraint firstItem="GPg-vI-m89" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="66" id="8Kk-yc-TTl"/>
+                            <constraint firstItem="oSz-V2-HPH" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="8z6-yg-EI5"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" constant="20" id="Es5-p9-53S"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="top" secondItem="Yyn-BW-fDc" secondAttribute="bottom" constant="20" id="Mto-4A-jMV"/>
+                            <constraint firstItem="oSz-V2-HPH" firstAttribute="top" secondItem="IcX-gN-iAS" secondAttribute="bottom" constant="8" id="RX1-JL-dwc"/>
+                            <constraint firstItem="Gxd-aN-GBl" firstAttribute="centerX" secondItem="HGm-j2-c4f" secondAttribute="centerX" id="Rg0-Wl-jEZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Gxd-aN-GBl" secondAttribute="trailing" id="ZNP-Bk-Gi8"/>
+                            <constraint firstItem="cRz-GV-ETc" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leading" id="bBJ-x1-h58"/>
                             <constraint firstItem="GPg-vI-m89" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="crt-Jh-cQw"/>
+                            <constraint firstItem="cRz-GV-ETc" firstAttribute="top" secondItem="DoV-jC-IkY" secondAttribute="bottom" constant="8" id="i9n-Sb-kYy"/>
+                            <constraint firstItem="Gxd-aN-GBl" firstAttribute="top" secondItem="Yyn-BW-fDc" secondAttribute="bottom" id="kEe-Cb-Fhj"/>
                             <constraint firstItem="DoV-jC-IkY" firstAttribute="top" secondItem="IcX-gN-iAS" secondAttribute="bottom" constant="8" id="kok-s5-pQw"/>
+                            <constraint firstItem="Gxd-aN-GBl" firstAttribute="centerX" secondItem="HGm-j2-c4f" secondAttribute="centerX" id="mWO-Qr-Ejy"/>
                             <constraint firstItem="GPg-vI-m89" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="nXb-Vo-r2t"/>
-                            <constraint firstItem="DoV-jC-IkY" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" id="sqS-Zt-FkT"/>
+                            <constraint firstItem="IcX-gN-iAS" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" constant="20" id="sTe-zQ-uhp"/>
+                            <constraint firstItem="DoV-jC-IkY" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leadingMargin" constant="88" id="sqS-Zt-FkT"/>
+                            <constraint firstItem="Gxd-aN-GBl" firstAttribute="leading" secondItem="HGm-j2-c4f" secondAttribute="leading" id="uPg-td-mCl"/>
                             <constraint firstItem="DoV-jC-IkY" firstAttribute="trailing" secondItem="HGm-j2-c4f" secondAttribute="trailingMargin" id="vuu-g2-wJL"/>
                             <constraint firstItem="IcX-gN-iAS" firstAttribute="centerX" secondItem="HGm-j2-c4f" secondAttribute="centerX" id="wh7-8W-noL"/>
+                            <constraint firstAttribute="trailing" secondItem="cRz-GV-ETc" secondAttribute="trailing" id="zCD-tj-OjM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -108,13 +146,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4X-c9-xug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="138.58695652173915"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Glosario-->
         <scene sceneID="Fth-LK-RKP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s1o-cz-Kd6" sceneMemberID="viewController">
+                <navigationController title="Glosario" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="s1o-cz-Kd6" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0IV-4s-GSZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
